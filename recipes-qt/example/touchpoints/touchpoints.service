@@ -1,0 +1,10 @@
+[Unit]
+Description=An example QML app
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/example/
+ExecStart=/usr/bin/qt5/qmlscene -platform eglfs touchpoints.qml
+
+[Install]
+WantedBy=multi-user.target
