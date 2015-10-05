@@ -1,0 +1,49 @@
+From 6fd6093e5407c1ae520f9df5483c027338316fd7 Mon Sep 17 00:00:00 2001
+From: Erik Boto <erik.boto@pelagicore.com>
+Date: Mon, 5 Oct 2015 20:53:47 +0200
+Subject: [PATCH] rpi-base.inc: fix path to dtb overlays in 4.1 kernel
+
+---
+ conf/machine/include/rpi-base.inc | 25 +++++++++++++------------
+ 1 file changed, 13 insertions(+), 12 deletions(-)
+
+diff --git a/conf/machine/include/rpi-base.inc b/conf/machine/include/rpi-base.inc
+index 1dda207..4dd759c 100644
+--- a/conf/machine/include/rpi-base.inc
++++ b/conf/machine/include/rpi-base.inc
+@@ -23,19 +23,20 @@ KERNEL_DEVICETREE ?= " \
+     bcm2708-rpi-b-plus.dtb \
+     bcm2709-rpi-2-b.dtb \
+     \
+-    ds1307-rtc-overlay.dtb \
+-    hifiberry-amp-overlay.dtb \
+-    hifiberry-dac-overlay.dtb \
+-    hifiberry-dacplus-overlay.dtb \
+-    hifiberry-digi-overlay.dtb \
+-    iqaudio-dac-overlay.dtb \
+-    iqaudio-dacplus-overlay.dtb \
+-    lirc-rpi-overlay.dtb \
+-    pcf8523-rtc-overlay.dtb \
+-    pps-gpio-overlay.dtb \
+-    w1-gpio-overlay.dtb \
+-    w1-gpio-pullup-overlay.dtb \
++    overlays/hifiberry-amp-overlay.dtb \
++    overlays/rpi-ft5406-overlay.dtb \
++    overlays/hifiberry-dac-overlay.dtb \
++    overlays/hifiberry-dacplus-overlay.dtb \
++    overlays/hifiberry-digi-overlay.dtb \
++    overlays/i2c-rtc-overlay.dtb \
++    overlays/iqaudio-dac-overlay.dtb \
++    overlays/iqaudio-dacplus-overlay.dtb \
++    overlays/lirc-rpi-overlay.dtb \
++    overlays/pps-gpio-overlay.dtb \
++    overlays/w1-gpio-overlay.dtb \
++    overlays/w1-gpio-pullup-overlay.dtb \
+     "
++
+ KERNEL_IMAGETYPE ?= "Image"
+ 
+ MACHINE_FEATURES = "kernel26 apm usbhost keyboard vfat ext2 screen touchscreen alsa bluetooth wifi sdio"
+-- 
+1.9.1
+
