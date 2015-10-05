@@ -20,3 +20,5 @@ FILES_${PN} += " \
 	/opt/example/ \
 	/lib/systemd/ \
 	"
+
+RDEPENDS_${PN} += "qtdeclarative-tools"
