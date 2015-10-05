@@ -16,18 +16,17 @@ This layer depends on:
   layers: meta
   branch: master
 
-  URI: git://git.yoctoproject.org/xxxx
-  layers: xxxx
+  URI: git://git.yoctoproject.org/meta-raspberrypi
+  branch: master
+  
+  URI: https://github.com/meta-qt5/meta-qt5.git
   branch: master
 
 
 Patches
 =======
 
-Please submit any patches against the erborpi layer to the
-xxxx mailing list (xxxx@zzzz.org) and cc: the maintainer:
-
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
+Maintainer: Erik Botö< erik.boto@gmail.com>
 
 
 Table of Contents
