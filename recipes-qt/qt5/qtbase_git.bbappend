@@ -1,3 +1,5 @@
+COMPATIBLE_MACHINE = "(raspberrypi2|raspberrypi)"
+
 PACKAGECONFIG = " \
     ${PACKAGECONFIG_RELEASE} \
     ${PACKAGECONFIG_DEFAULT} \
