@@ -1,5 +1,8 @@
 COMPATIBLE_MACHINE = "(raspberrypi2|raspberrypi)"
 
+FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
+SRC_URI_append = "file://0001-fix-rasp-build.patch"
+
 PACKAGECONFIG = " \
     ${PACKAGECONFIG_RELEASE} \
     ${PACKAGECONFIG_DEFAULT} \
