@@ -8,7 +8,6 @@ IMAGE_FEATURES += "package-management ssh-server-dropbear tools-debug"
 IMAGE_INSTALL += " \
     qtbase \
     qtbase-plugins \
-    qtbase-fonts \
     qtdeclarative \
     qtdeclarative-plugins \
     qtdeclarative-qmlplugins \
@@ -20,6 +19,7 @@ IMAGE_INSTALL += " \
     qtwebkit-qmlplugins \
     qtsvg \
     qtsvg-plugins \
+    liberation-fonts \
     "
 
 # Example application
