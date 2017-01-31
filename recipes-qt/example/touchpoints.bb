@@ -8,6 +8,8 @@ SRC_URI = " \
 	file://touchpoints.service \
 	"
 
+S = "${WORKDIR}"
+LIC_FILES_CHKSUM = "file://touchpoints.qml;md5=a74e4a71b3df70526e8cf28a9e53e637"
 do_configure[noexec] = "1"
 do_compile[noexec] = "1"
 
