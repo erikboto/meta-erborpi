@@ -15,8 +15,8 @@ IMAGE_INSTALL += " \
     qtmultimedia \
     qtmultimedia-plugins \
     qtmultimedia-qmlplugins \
-    qtwebkit \
-    qtwebkit-qmlplugins \
+    qtwebengine \
+    qtwebengine-qmlplugins \
     qtsvg \
     qtsvg-plugins \
     liberation-fonts \
