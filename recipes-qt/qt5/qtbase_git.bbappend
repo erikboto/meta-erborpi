@@ -18,3 +18,5 @@ PACKAGECONFIG = " \
 
 EXTRA_OECONF += "'-I${STAGING_DIR_TARGET}/usr/include/interface/vcos/pthreads/' \
                  '-I${STAGING_DIR_TARGET}/usr/include/interface/vmcs_host/linux/'" 
+
+QT_CONFIG_FLAGS += "-no-use-gold-linker"
