@@ -4,23 +4,22 @@ inherit core-image populate_sdk_qt5
 
 IMAGE_FEATURES += "package-management ssh-server-dropbear tools-debug"
 
+# System tools
+IMAGE_INSTALL += " \
+    systemd-analyze \
+"
+
 # Qt Packages
 IMAGE_INSTALL += " \
     qtbase \
     qtbase-plugins \
     qtdeclarative \
-    qtdeclarative-plugins \
-    qtdeclarative-qmlplugins \
     qtdeclarative-tools \
     qtmultimedia \
-    qtmultimedia-plugins \
-    qtmultimedia-qmlplugins \
     qtwebengine \
-    qtwebengine-qmlplugins \
     qtsvg \
-    qtsvg-plugins \
     liberation-fonts \
-    "
+"
 
 # Example application
 IMAGE_INSTALL += " touchpoints "
