@@ -2,7 +2,7 @@ DESCRIPTION = "Extend core-image by adding Qt5"
 
 inherit core-image populate_sdk_qt5
 
-IMAGE_FEATURES += "package-management ssh-server-dropbear tools-debug"
+IMAGE_FEATURES += "package-management ssh-server-openssh tools-debug"
 
 # System tools
 IMAGE_INSTALL += " \
