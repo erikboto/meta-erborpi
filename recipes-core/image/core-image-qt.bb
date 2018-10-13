@@ -7,6 +7,13 @@ IMAGE_FEATURES += "package-management ssh-server-openssh tools-debug"
 # System tools
 IMAGE_INSTALL += " \
     systemd-analyze \
+    network-config \
+    openssh-sftp-server \
+"
+
+IMAGE_INSTALL += " \
+    wiringpi \
+    rpi-gpio \
 "
 
 # Qt Packages
