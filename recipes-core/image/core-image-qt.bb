@@ -25,6 +25,16 @@ IMAGE_INSTALL += " \
     qtmultimedia \
     qtwebengine \
     qtsvg \
+    qtserialport \
+    qtquickcontrols \
+    qtmqtt \
+    qtimageformats \
+    qtxmlpatterns \
+    qtwebsockets \
+    qtsensors \
+    qtlocation \
+    qtquickcontrols2 \
+    qt3d \
     liberation-fonts \
 "
 
