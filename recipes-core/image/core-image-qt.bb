@@ -39,6 +39,7 @@ IMAGE_INSTALL += " \
     qtquickcontrols2 \
     qt3d \
     liberation-fonts \
+    qmllive \
 "
 
 # Example application
