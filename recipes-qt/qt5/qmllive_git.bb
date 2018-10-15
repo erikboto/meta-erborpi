@@ -17,5 +17,5 @@ EXTRA_QMAKEVARS_POST += "QMAKE_RPATHDIR="
 
 do_install_append() {
     rm -rf ${D}/${bindir}/qmllivebench
-    rm -rf ${D}//usr/libexec/qmllive
+    rm -rf ${D}//usr/libexec
 }
