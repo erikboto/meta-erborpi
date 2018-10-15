@@ -1,0 +1,2 @@
+# Set hostname
+hostname="qtipi"
