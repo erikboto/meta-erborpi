@@ -12,6 +12,7 @@ IMAGE_INSTALL += " \
     systemd-analyze \
     network-config \
     openssh-sftp-server \
+    avahi-daemon \
 "
 
 IMAGE_INSTALL += " \
