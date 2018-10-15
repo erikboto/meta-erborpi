@@ -1,0 +1,25 @@
+From 27b315517aa375cec88d7a805631adb56bd44ea8 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Erik=20Bot=C3=B6?= <erik.boto@gmail.com>
+Date: Mon, 15 Oct 2018 18:21:23 +0000
+Subject: [PATCH] enable on wlan0 only
+
+---
+ avahi-daemon/avahi-daemon.conf | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/avahi-daemon/avahi-daemon.conf b/avahi-daemon/avahi-daemon.conf
+index ff9a4c5..fce8967 100644
+--- a/avahi-daemon/avahi-daemon.conf
++++ b/avahi-daemon/avahi-daemon.conf
+@@ -24,7 +24,7 @@
+ #browse-domains=0pointer.de, zeroconf.org
+ use-ipv4=yes
+ use-ipv6=yes
+-#allow-interfaces=eth0
++allow-interfaces=wlan0
+ #deny-interfaces=eth1
+ #check-response-ttl=no
+ #use-iff-running=no
+-- 
+2.7.4
+
