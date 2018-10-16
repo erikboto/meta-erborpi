@@ -20,10 +20,11 @@ do_install() {
     sed 's,####SSID####,${QTIPI_SSID},' -i ${D}/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
     sed 's,####PASSKEY####,${QTIPI_PASSKEY},' -i ${D}/etc/wpa_supplicant/wpa_supplicant-wlan0.conf
 
-
+    install -d ${D}/${systemd_unitdir}/system/multi-user.target.wants/
+    ln -sf /lib/systemd/system/wpa_supplicant@.service ${D}/${systemd_unitdir}/system/multi-user.target.wants/wpa_supplicant@wlan0.service
 }
 
 FILES_${PN} = " \
-    /lib/systemd/network/* \
+    /lib/systemd/* \
     /etc/wpa_supplicant/* \
 "
